@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* shared style  */
+.primary-btn {
+  /* border-radius: 46px;
+  background: rgb(230, 83, 60);
+  border: 2px solid slateblue;
+  border-radius: 39px;
+  padding: 8px 12px; */
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+  height: 600px;
+  border: 3px solid steelblue;
+  background-color: rgb(17, 17, 17, 0.4);
+}
+.bg {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+/* nav styles start  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 55px auto;
+  /* border: 2px solid green; */
+}
+
+nav .logo {
+  color: rgb(230, 83, 60);
+  font-style: italic;
+  padding-top: 4px;
+}
+
+nav .nav-link {
+  display: flex;
+  gap: 40px;
+  border: 1px solid gray;
+  border-radius: 39px;
+}
+
+nav .nav-link a {
+  text-decoration: none;
+  color: white;
+  border-radius: 39px;
+  padding: 8px 12px;
+}
+nav .nav-link a:first-child{
+    background-color: rgb(230, 83, 60);
+    border-radius: 39px;
+    
+}

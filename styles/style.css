@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,27 +10,39 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* shared style  */
-.primary-btn {
-  /* border-radius: 46px;
-  background: rgb(230, 83, 60);
-  border: 2px solid slateblue;
-  border-radius: 39px;
-  padding: 8px 12px; */
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 
+/* shared style  */
+.btn-primary {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  padding: 8px 12px;
+}
+.description-txt {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* header style  */
 header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
   );
-  height: 600px;
-  border: 3px solid steelblue;
+
+  border: 1px solid black;
   background-color: rgb(17, 17, 17, 0.4);
 }
 .bg {
-  height: 500px;
   width: 100%;
   background: linear-gradient(
     360deg,
@@ -45,7 +57,6 @@ nav {
   justify-content: space-between;
   width: 85%;
   margin: 55px auto;
-  /* border: 2px solid green; */
 }
 
 nav .logo {
@@ -67,8 +78,144 @@ nav .nav-link a {
   border-radius: 39px;
   padding: 8px 12px;
 }
-nav .nav-link a:first-child{
-    background-color: rgb(230, 83, 60);
-    border-radius: 39px;
-    
+nav .nav-link a:first-child {
+  background-color: rgb(230, 83, 60);
+  border-radius: 39px;
+}
+
+/* hero section style start  */
+.hero {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 50%;
+  
+}
+
+.hero .hero-content h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 0.9;
+}
+.hero .hero-content p {
+  width: 70%;
+}
+.hero .hero-content .shape-txt{
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-size: 7rem;
+}
+.hero .hero-content .hero-btns {
+  display: flex;
+  gap: 10px;
+}
+.hero .hero-content .hero-btns a:last-child {
+  border-radius: 46px;
+  padding: 8px 12px;
+  border: 1px solid gray;
+}
+
+.hero .hero-img {
+  width: 40%;
+  position: relative;
+}
+
+.hero .hero-img .video-tutorial {
+  width: 12rem;
+  height: 6rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero-img .video-tutorial .play-logo {
+  display: flex;
+  background-color: rgb(230, 83, 60);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.hero .hero-img .video-tutorial .video-tutorial-content{
+  margin-top: 10px;
+}
+
+.hero .hero-img .free-workout{
+  width: 12rem;
+  height: 6rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+}
+/* change your habit section style start  */
+
+/*training & exercise section start*/
+.training-exc {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+.training-exc .row1 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.training-exc .row1 div {
+  height: 200px;
+}
+.training-exc .row2 div {
+  height: 200px;
+}
+.training-exc .row2 {
+  display: grid;
+  grid-template-columns: 40% 25% 35%;
+}
+
+.training-exc .row1 .img1 {
+  position: relative;
+  background: rgba(224, 166, 57, 0.5);
+}
+
+.training-exc .row1 .img1 p {
+  position: absolute;
+  top: 20px;
+}
+.training-exc .row1 .img1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0.5); /* Orange color with 50% opacity */
+  z-index: 1; /* Ensures overlay is above the image */
 }

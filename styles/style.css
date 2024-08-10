@@ -268,44 +268,38 @@ nav .nav-link a:first-child {
 }
 /* run an extra mile section end  */
 
-/*training & exercise section start*/
-.training-exc {
+
+/* food habit as a unique section  start */
+.food-habit{
   width: 80%;
-  margin: 2rem auto;
+  margin: 100px auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  background: rgb(34, 34, 34);
+}
+
+.food-habit .img-div{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.food-habit .food-habit-content{
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.food-habit .food-habit-description{
+  width: 45%;
+  padding: 2rem;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
+  gap: 20px;
 }
-.training-exc .row1 {
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-}
-.training-exc .row1 div {
-  height: 200px;
-}
-.training-exc .row2 div {
-  height: 200px;
-}
-.training-exc .row2 {
-  display: grid;
-  grid-template-columns: 40% 25% 35%;
+.food-habit .food-habit-description a{
+  width: 40%;
 }
 
-.training-exc .row1 .img1 {
-  position: relative;
-  background: rgba(224, 166, 57, 0.5);
-}
-
-.training-exc .row1 .img1 p {
-  position: absolute;
-  top: 20px;
-}
-.training-exc .row1 .img1 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 165, 0, 0.5); /* Orange color with 50% opacity */
-  z-index: 1; /* Ensures overlay is above the image */
-}
+/* food habit as a unique section  end  */

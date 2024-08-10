@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
+main {
+  background-color: black;
+}
 
 a {
   text-decoration: none;
@@ -17,6 +20,25 @@ a {
 img {
   width: 100%;
   height: 100%;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  
+}
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* shared style  */
@@ -96,7 +118,6 @@ nav .nav-link a:first-child {
   flex-direction: column;
   margin-top: 5rem;
   width: 50%;
-  
 }
 
 .hero .hero-content h1 {
@@ -108,7 +129,7 @@ nav .nav-link a:first-child {
 .hero .hero-content p {
   width: 70%;
 }
-.hero .hero-content .shape-txt{
+.hero .hero-content .shape-txt {
   font-family: "Allura", cursive;
   font-weight: 400;
   font-size: 7rem;
@@ -155,11 +176,11 @@ nav .nav-link a:first-child {
   margin-right: 10px;
 }
 
-.hero .hero-img .video-tutorial .video-tutorial-content{
+.hero .hero-img .video-tutorial .video-tutorial-content {
   margin-top: 10px;
 }
 
-.hero .hero-img .free-workout{
+.hero .hero-img .free-workout {
   width: 12rem;
   height: 6rem;
   box-sizing: border-box;
@@ -176,7 +197,45 @@ nav .nav-link a:first-child {
   padding: 20px;
   justify-content: center;
 }
+/* hero section style end  */
+
 /* change your habit section style start  */
+.change-habit {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.change-habit .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+  margin: auto;
+  gap: 10px;
+}
+
+.change-habit .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.change-habit .cards .card {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+.change-habit .cards .card img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+}
+/* change your habit section style end  */
 
 /*training & exercise section start*/
 .training-exc {

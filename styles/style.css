@@ -29,7 +29,6 @@ h2 {
   font-weight: 900;
   line-height: 120%;
   letter-spacing: 0%;
-  
 }
 h4 {
   color: rgb(255, 255, 255);
@@ -46,6 +45,8 @@ h4 {
   border-radius: 46px;
   background: rgb(230, 83, 60);
   padding: 8px 12px;
+  color: white;
+  font-weight: bold;
 }
 .description-txt {
   font-size: small;
@@ -227,7 +228,6 @@ nav .nav-link a:first-child {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 }
 .change-habit .cards .card img {
   width: 100%;
@@ -236,6 +236,37 @@ nav .nav-link a:first-child {
   margin-bottom: 1.5rem;
 }
 /* change your habit section style end  */
+
+/* run an extra mile section start  */
+.run-extra-mile {
+  width: 80%;
+  margin: 70px auto;
+  display: flex;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  justify-content: space-between;
+}
+.run-extra-mile .run-content{
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.run-extra-mile .run-content a{
+  width: 50%;
+  text-align: center;
+}
+
+.run-extra-mile .run-img{
+  width: 50%;
+  padding: 1.5rem 2rem;
+}
+.run-extra-mile .run-img img{
+  width: 100%;
+  border-radius: 18px;
+}
+/* run an extra mile section end  */
 
 /*training & exercise section start*/
 .training-exc {

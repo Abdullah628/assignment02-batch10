@@ -11,6 +11,7 @@ body {
 }
 main {
   background-color: black;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -408,6 +409,7 @@ th {
   margin: auto;
   text-align: center;
   margin-bottom: 3rem;
+  
 }
 
 .meet-images {
@@ -419,6 +421,7 @@ th {
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 18px;
+  
 }
 
 .meet-images .card {
@@ -435,3 +438,59 @@ th {
   left: 10%;
 }
 /* meet our team section start  */
+
+/* footer section start  */
+footer{
+  background: rgb(34, 34, 34);
+  width: 100%;
+  /* margin-bottom: 200px; */
+  border: 1px solid rgb(34, 34, 34);
+  
+}
+
+footer .footer-content{
+  width: 80%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+footer .footer-content .heading{
+  width: 85%;
+}
+
+footer .footer-content h1{
+  color: rgb(230, 83, 60);
+  font-style: italic;
+  padding-top: 4px;
+  font-size: 4.5rem;
+  margin-bottom: 10px;
+}
+
+footer .footer-content .get-started{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+footer .footer-content .get-started h3{
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer .footer-content .get-started a{
+  color: rgba(255, 255, 255, 0.5);
+}
+footer hr{
+  
+  width: 80%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .copyright-txt{
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* footer section end  */

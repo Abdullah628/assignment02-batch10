@@ -311,14 +311,14 @@ nav .nav-link a:first-child {
   flex-direction: column;
   margin: auto;
   align-items: center;
-margin-bottom: 5rem;
+  margin-bottom: 4rem;
   width: 40%;
 }
 
 .bmi-calculator {
   width: 100%;
   background: rgb(34, 34, 34);
-  margin-bottom: 200px;
+  margin-bottom: 4rem;
 }
 
 .bmi-calculator-container {
@@ -367,7 +367,7 @@ th {
   font-size: 28px;
   font-weight: 900;
   line-height: 120%;
-  letter-spacing: 0%;
+  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -386,7 +386,7 @@ th {
   color: #fff;
   border-radius: 5px;
 }
-.last-child select{
+.last-child select {
   width: 100%;
   padding: 10px;
   background-color: #333;
@@ -395,9 +395,43 @@ th {
   border-radius: 5px;
   margin: auto;
 }
-.calcualate-bmi .btn a{
+.calcualate-bmi .btn a {
   width: 40%;
   text-align: center;
   margin-top: 15px;
 }
 /* bmi calculator section end  */
+
+/* meet our team section start  */
+.meet-team-header {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.meet-images {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+}
+
+.meet-images .card {
+  position: relative;
+}
+.meet-images .card img {
+  border-radius: 18px;
+  height: 272px;
+}
+
+.meet-images .card .img-desc {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+/* meet our team section start  */

@@ -106,7 +106,11 @@ nav .nav-link a:first-child {
   background-color: rgb(230, 83, 60);
   border-radius: 39px;
 }
-
+.hamburg-icon{
+  display: none;
+  color: white;
+  font-size: 2rem;
+}
 /* hero section style start  */
 .hero {
   width: 85%;
@@ -118,7 +122,7 @@ nav .nav-link a:first-child {
 .hero .hero-content {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 7rem;
   width: 50%;
 }
 
@@ -161,7 +165,8 @@ nav .nav-link a:first-child {
   background: rgba(48, 48, 48, 0.54);
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 70%;
+  left: -5rem;
   color: white;
   align-items: center;
   justify-content: center;
@@ -494,3 +499,109 @@ footer .copyright-txt{
 }
 
 /* footer section end  */
+
+
+
+
+/* start responsive media query for mobile  */
+
+@media  screen and (max-width: 576px) {
+  .hamburg-icon{
+    display: block;
+  }
+  nav .nav-link{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero .hero-content{
+    width: 100%;
+  }
+
+  .hero .hero-content .hero-btns{
+    margin: auto;
+  }
+  .hero .hero-img{
+    width: 100%;
+  }
+  .hero .hero-img .video-tutorial{
+    left: 0;
+  }
+
+  .change-habit{
+    flex-direction: column;
+  }
+  .change-habit .header-content{
+    width: 100%;
+  }
+  .change-habit .cards{
+    flex-direction: column;
+    
+  }
+  .change-habit .cards .card{
+    width: 70%;
+    margin: auto;
+  }
+  .run-extra-mile{
+    flex-direction: column;
+  }
+  .run-extra-mile .run-content{
+    width: 100%;
+  }
+  .run-extra-mile .run-content a{
+    width: 100%;
+  }
+  .run-extra-mile .run-img{
+    width: 100%;
+  }
+
+  .food-habit{
+    flex-direction: column;
+  }
+  .food-habit .food-habit-content{
+    width: 100%;
+  }
+  .food-habit .food-habit-description{
+    width: 100%;
+  }
+  .food-habit .food-habit-description a{
+    width: 70%;
+  }
+
+  .bmi-calculator-header{
+    width: 80%;
+    align-items: start;
+  }
+
+  .bmi-calculator .bmi-calculator-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .bmi-calculator .bmi-calculator-container .calculator-chart{
+    width: 100%;
+  }
+  .bmi-calculator .bmi-calculator-container .calculator-chart table{
+    width: 100%;
+  }
+  .bmi-calculator .bmi-calculator-container  .calcualate-bmi{
+    width: 100%;
+  }
+  .meet-team-header{
+    width: 100%;
+  }
+  .meet-images {
+    grid-template-columns: 1fr;
+  }
+  footer .footer-content{
+    grid-template-columns: 1fr;
+  }
+  footer .footer-content .get-started{
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
